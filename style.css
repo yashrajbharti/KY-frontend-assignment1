@@ -215,14 +215,31 @@ body {
 }
 .slider_btn {
   top: 400px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   background: #232427;
   line-height: 50px;
   text-align: center;
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2),
     inset 2px 2px 5px rgba(255, 255, 255, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.slider_btn::after {
+  font-size: 30px;
+  font-weight: bold;
+  color: #00bbff;
+}
+@media screen and (max-width: 576px) {
+  .slider_btn {
+    top: 400px;
+    height: 40px;
+    width: 40px;
+  }
+  .slider_btn::after {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00bbff;
+  }
 }
 .blog-slider__img {
   width: 500px;
@@ -357,16 +374,17 @@ body {
   height: 11px;
   display: block;
   border-radius: 10px;
-  /* background: #062744; */
+  background: #919192;
+
+  box-shadow: inset 5px 5px 5px rgba(1, 54, 85, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1);
   opacity: 0.2;
   transition: all 0.3s;
 }
 .blog-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: rgba(255, 255, 255, 0.03);
+  background: #00bbff;
   height: 30px;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.1);
 }
 @media screen and (max-width: 768px) {
   .blog-slider__pagination .swiper-pagination-bullet-active {
