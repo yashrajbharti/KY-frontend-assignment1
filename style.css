@@ -211,12 +211,40 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .glowing {
+    position: relative;
+    left: 35%;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .glowing {
+    position: relative;
+    left: 32%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .glowing {
+    position: relative;
+    left: 30%;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .glowing {
+    position: relative;
+    left: 25%;
+  }
+}
 @media only screen and (max-width: 600px) {
   .swiper-slide {
     width: 400px;
   }
   .right {
     left: -19%;
+  }
+  .glowing {
+    position: relative;
+    left: 18%;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -229,6 +257,12 @@ h1 {
   .swiper-slide img {
     height: 265px;
     width: 95%;
+  }
+  .glowing {
+    position: relative;
+    left: 15%;
+    font-size: 50px;
+    width: 310px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -263,5 +297,11 @@ h1 {
   }
   .right img {
     height: 50px;
+  }
+  .glowing {
+    position: relative;
+    left: 8%;
+    font-size: 50px;
+    width: 310px;
   }
 }
